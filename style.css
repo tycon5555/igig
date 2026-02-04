@@ -1,0 +1,176 @@
+/* -------------------------------------------------
+   SEMICRYPTO PREMIUM UI — DARK MODE
+   Binance Pro + Coinbase + Apple Hybrid
+---------------------------------------------------*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "SF Pro Display", sans-serif;
+}
+
+body {
+  background: #0c0c0d;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Layout */
+header {
+  width: 100%;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0f10;
+  border-bottom: 1px solid #1a1a1c;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+nav a {
+  margin-left: 26px;
+  color: #c8c8c8;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Sections */
+section {
+  padding: 40px 40px;
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 60px;
+  font-weight: 700;
+  max-width: 900px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.hero-tagline {
+  font-size: 22px;
+  color: #b4b4b4;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.btn {
+  padding: 14px 24px;
+  background: #ffffff;
+  color: #000;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* Cards (Apple-style) */
+.card {
+  background: #131316;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #1f1f22;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: #2b2b2f;
+  transform: translateY(-3px);
+}
+
+/* Token Grid */
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.token-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.token-card h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.token-sub {
+  font-size: 14px;
+  color: #a8a8a8;
+}
+
+/* Search bar */
+.search-box {
+  width: 100%;
+  padding: 16px;
+  background: #101012;
+  border: 1px solid #1f1f22;
+  border-radius: 12px;
+  color: #fff;
+  margin-bottom: 22px;
+  font-size: 17px;
+}
+
+/* Buy/Sell Box */
+.trade-box {
+  width: 380px;
+  padding: 22px;
+  background: #131316;
+  border-radius: 18px;
+  border: 1px solid #1f1f22;
+}
+
+.trade-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: #0f0f10;
+  border: 1px solid #1f1f22;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 50px 40px;
+  border-top: 1px solid #1a1a1c;
+  color: #9b9b9b;
+  text-align: center;
+}
+
+/* Smooth fade-in */
+.fade {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
